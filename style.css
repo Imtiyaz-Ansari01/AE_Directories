@@ -170,7 +170,7 @@ body{
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     #search-box{
         height: 1.5rem;
         width: 20vw;
@@ -183,5 +183,14 @@ body{
     }
     #logout{
         font-size: .8rem;
+    }
+    .quote1{
+        font-size: .8rem;
+    }
+    .quote2{
+        font-size: 1.2rem;
+    }
+    .quote3{
+        font-size: 2rem;
     }
 }
