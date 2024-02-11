@@ -10,16 +10,15 @@ body{
 
 .navbar{
     height: 80px;
-    width: calc(100% - 20px);
-    margin-left: 10px;
+    width: calc(100% - 2vw);
+    margin: 1vw;
     background-color: #002333;
-    margin-top: 20px;
-    margin: 10px;
     color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 10px;
+    border-radius: .5rem;
+    position: relative;
 }
 
 .menu-bar{
@@ -27,26 +26,27 @@ body{
     left: 2%;
 }
 
+
 /* .nav-search .item{
     height: 30px;
 } */
 
 #search-box{
-    width: 50%;
-    height: 30px;
+    width: 30vw;
+    height: 2rem;
     border: 1.5px solid #DEEFE7;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 #search-box:focus{
     outline: none;
 }
 
 #search-type{
-    height: 30px;
+    height: 2rem;
     border: 1.5px solid #DEEFE7;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
     width: auto;
 }
 #search-type:focus{
@@ -56,24 +56,24 @@ body{
 
 .user-logout{
     display: flex;
-    position: relative;
-    left: 200px;
+    position: absolute;
+    right: 3%;
 }
 
 .user-logout p{
-    margin-left: 25px;
+    margin-left: 1vw;
     size: 1.5rem
 }
 .search{
     border: 1.5px solid #DEEFE7;
-    height: 30px;
+    height: 2rem;
     display: flex;
     align-items: center;
-    margin-left: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-left: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     font-weight: 500;
-    border-radius: 5px;
+    border-radius: .5rem;
 }
 .search:hover{
     background-color: #036457;
@@ -82,49 +82,61 @@ body{
 .nav-search{
     display: flex;
     align-items: center;
+    position: relative;
+    right: 3vw;
 }
 
 .hero-section{
     background-image: url("Excavator.jpg");
-    width: calc(100% - 20px);
-    margin: 0 auto;
+    width: calc(100% - 2vw);
+    margin: 1vw;
     height: 800px;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
+    border-radius: .5rem;
     /* position: absolute; */
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
+.hero-section{
+    display: flex;
+    align-items: end;
+
+}
 .hero-section span{
-    color: rgb(20, 42, 33);
+    color: rgb(12, 41, 52);
+    margin-right: 2vw;
 }
 .quote1{
-    font-size: 2.5rem;
-    font-family: cursive;
-    position: absolute;
-    bottom: 180px;
-    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 700;
 }
 .quote2{
+    font-size: 3rem;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 700;
+}
+.quote3{
     font-size: 4rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    bottom: 100px;
+    font-family: 'Cedarville Cursive', cursive;
     font-weight: 900;
+    
 }
 
 
 .footer-section{
     background-color: #1b2930;
     height: 100px;
-    width: calc(100%-10px);
-    margin: 10px;
-    border-radius: 5px;
+    width: calc(100%-2vw);
+    margin: 1vw;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .foot-items a{
     color: #d7dfdb;
@@ -136,6 +148,40 @@ body{
     display: flex;
     justify-content: center;
 }
-.foot-items{
-    margin-top: 35px;
+
+
+@media screen and (max-width: 1050px) {
+    #email{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 720px) {
+    .quote1{
+        font-size: 1rem;
+    }
+    .quote2{
+        font-size: 2rem;
+    }
+    .quote3{
+        font-size: 3rem;
+    }
+    .footer-section li ul{
+        font-size: .65rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #search-box{
+        height: 1.5rem;
+        width: 20vw;
+    }
+    #search-type{
+        height: 1.5rem;
+    }
+    .search{
+        height: 1.5rem;
+    }
+    #logout{
+        font-size: .8rem;
+    }
 }
